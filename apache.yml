@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: true
+  tasks:
+    - name: Create apples.txt file
+      file:
+        path: /home/tanny/Desktop/apples.txt  
+        state: touch
+        mode: '0644'  
